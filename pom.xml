@@ -5,7 +5,7 @@
   <parent>
     <groupId>ru.ibsqa.qualit</groupId>
     <artifactId>qualit-bom</artifactId>
-    <version>3.4-BETA-SNAPSHOT</version>
+    <version>3.4.0</version>
   </parent>
   <groupId>org.example</groupId>
   <artifactId>junit-example</artifactId>
@@ -26,12 +26,9 @@
   </dependencies>
   <repositories>
     <repository>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <id>qualit-snapshots</id>
-      <name>IBS QualIT Snapshots Repo</name>
-      <url>https://nexus.appline.ru/repository/qualit-snapshots</url>
+      <id>qualit</id>
+      <name>QualIT Framework</name>
+      <url>https://nexus.appline.ru/repository/qualit</url>
     </repository>
   </repositories>
 </project>
