@@ -8,22 +8,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.test.context.support.DependencyInjectionTestExecutionListener;
-import ru.ibsqa.qualit.definitions.repository.IRepositoryManager;
-import ru.ibsqa.qualit.definitions.repository.selenium.elements.MetaPage;
-import ru.ibsqa.qualit.evaluate.IEvaluateManager;
-import ru.ibsqa.qualit.selenium.driver.IDriverManager;
-import ru.ibsqa.qualit.steps.CollectionSteps;
-import ru.ibsqa.qualit.steps.CoreUtilSteps;
-import ru.ibsqa.qualit.steps.PageSteps;
-import ru.ibsqa.qualit.steps.SeleniumFieldSteps;
-import ru.ibsqa.qualit.utils.spring.QualITSpringExtension;
+import ru.ibsqa.chameleon.definitions.repository.IRepositoryManager;
+import ru.ibsqa.chameleon.definitions.repository.selenium.elements.MetaPage;
+import ru.ibsqa.chameleon.evaluate.IEvaluateManager;
+import ru.ibsqa.chameleon.selenium.driver.IDriverManager;
+import ru.ibsqa.chameleon.steps.CollectionSteps;
+import ru.ibsqa.chameleon.steps.CoreUtilSteps;
+import ru.ibsqa.chameleon.steps.PageSteps;
+import ru.ibsqa.chameleon.steps.SeleniumFieldSteps;
+import ru.ibsqa.chameleon.utils.spring.ChameleonSpringExtension;
 
 import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 @Slf4j
-@ExtendWith(QualITSpringExtension.class)
+@ExtendWith(ChameleonSpringExtension.class)
 @ContextConfiguration("classpath:spring.xml")
 @TestExecutionListeners(inheritListeners = false, listeners = {DependencyInjectionTestExecutionListener.class})
 public class RepositoryTest {

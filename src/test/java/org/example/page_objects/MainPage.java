@@ -1,10 +1,10 @@
 package org.example.page_objects;
 
 import org.springframework.stereotype.Component;
-import ru.ibsqa.qualit.definitions.annotations.selenium.Field;
-import ru.ibsqa.qualit.definitions.annotations.selenium.Page;
-import ru.ibsqa.qualit.elements.web.Link;
-import ru.ibsqa.qualit.page_factory.pages.DefaultPageObject;
+import ru.ibsqa.chameleon.definitions.annotations.selenium.Field;
+import ru.ibsqa.chameleon.definitions.annotations.selenium.Page;
+import ru.ibsqa.chameleon.elements.web.Link;
+import ru.ibsqa.chameleon.page_factory.pages.DefaultPageObject;
 
 @Component
 @Page(name = "Главная страница")
